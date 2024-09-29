@@ -10,7 +10,10 @@ body{
     color: #cd3314;
 }
 .bg-red{
-    background-color: red !important;
+    background-color: #cd3314 !important;
+}
+.c-white{
+    color: white !important;
 }
 
 /* TEXT */
@@ -32,6 +35,7 @@ body{
 .j-c-around{
     justify-content: space-around;
 }
+
 /* HEADER */
 .headBorder{
     background-color:  #f0a3a3;
@@ -56,16 +60,6 @@ body{
 }
 .hg-22{
     height: 22px;
-}
-table {
-    width: 100%;
-    border-collapse: collapse;
-    border: 2px solid rgb(140 140 140);
-    font-size: 0.8rem;
-}
-th{
-    border: 1px solid rgb(160 160 160) !important;
-    padding: 8px 10px !important;
 }
 
 /* FOOTER */
