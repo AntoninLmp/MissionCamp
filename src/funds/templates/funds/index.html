@@ -1,0 +1,81 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'funds/style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/14007/14007314.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Mission Camp 2025</title>
+</head>
+
+<body>
+    {% include 'funds/header.html' %}
+    <main>
+        <div class="d-flex">
+            <div>
+                <section class="w-min center">
+                    <img src="https://st5.depositphotos.com/3369547/65830/v/450/depositphotos_658304136-stock-illustration-adventure-nature-camping-icon-isolated.jpg"
+                        alt="Image d'une tente">
+                    <h1 class="red">PIONNIERS CARAVELLES</h1>
+                    <section class="px-5">
+                        <h2 class="text-uppercase bold">Objectif</h2>
+                        <p>Notre objectif est de récolter 5000€ pour financer notre camp d'été 2025. Nous avons besoin
+                            de votre aide pour réaliser ce projet qui nous tient à coeur.</p>
+                    </section>
+                </section>
+            </div>
+            <div class="w-100 m-5">
+                <section class="m-5">
+                    <h2 class="uppercase center mb-5 red">Progression de notre objectif</h2>
+                    <p class="center" id="descriptionBar"></p>
+                    <div class="progress m-5 hg-22">
+                        <div class="progress-bar bg-red" id="progressbarMoney" role="progressbar" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <section class="d-flex center j-c-around">
+                        <div>
+                            <h2 class="bold">TOTAL RECOLTE</h2>
+                            <p class="money red" id="total-collected"></p>
+                        </div>
+                        <div>
+                            <h2 class="bold">OBJECTIF FINAL</h2>
+                            <p class="money red" id="total-goal"></p>
+                        </div>         
+                    </section>
+                </section>
+                <section>
+                    <h2 class="uppercase center mb-5 red">Liste des Extrajobs</h2>
+                    <table id="data_extrajobs" border="1">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Description</th>
+                                <th>Nombre de personnes</th>
+                                <th>Montant</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>01/01/2025</td>
+                                <td>Nettoyage de la plage</td>
+                                <td>5</td>
+                                <td>100€</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'funds/js/progressbar.js' %}"></script>
+</body>
+
+</html>
