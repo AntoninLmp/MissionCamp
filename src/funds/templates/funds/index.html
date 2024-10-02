@@ -19,21 +19,19 @@
     {% include 'funds/header.html' %}
     <main>
         <div class="d-flex">
-            <div>
-                <section class="w-min center">
-                    <img src="https://st5.depositphotos.com/3369547/65830/v/450/depositphotos_658304136-stock-illustration-adventure-nature-camping-icon-isolated.jpg"
-                        alt="Image d'une tente">
-                    <h1 class="red">PIONNIERS CARAVELLES</h1>
-                    <section class="px-5">
-                        <h2 class="text-uppercase bold">Objectif</h2>
-                        <p>Notre objectif est de récolter 5000€ pour financer notre camp d'été 2025. Nous avons besoin
-                            de votre aide pour réaliser ce projet qui nous tient à coeur.</p>
-                    </section>
+            <div class="w-min center" id="cont_infos">
+                <img src="https://st5.depositphotos.com/3369547/65830/v/450/depositphotos_658304136-stock-illustration-adventure-nature-camping-icon-isolated.jpg"
+                    alt="Image d'une tente">
+                <h1 class="red">PIONNIERS CARAVELLES</h1>
+                <section class="px-5">
+                    <h2 class="text-uppercase bold">Objectif</h2>
+                    <p>Notre objectif est de récolter 5000€ pour financer notre camp d'été 2025. Nous avons besoin
+                        de votre aide pour réaliser ce projet qui nous tient à coeur.</p>
                 </section>
             </div>
-            <div class="w-100 m-5">
-                <section class="m-5">
-                    <h2 class="uppercase center mb-5 red">Progression de notre objectif</h2>
+            <div class="w-100 mx-5" id="cont_funds">
+                <section class="mt-5 m-3">
+                    <h2 class="uppercase center mb-3 red">Progression de notre objectif</h2>
                     <p class="center" id="descriptionBar"></p>
                     <div class="progress m-5 hg-22">
                         <div class="progress-bar bg-red" id="progressbarMoney" role="progressbar" aria-valuenow="25"
@@ -41,47 +39,34 @@
                     </div>
                     <section class="d-flex center j-c-around">
                         <div>
-                            <h2 class="bold">TOTAL RECOLTE</h2>
+                            <h4 class="bold">TOTAL RECOLTE</h2>
                             <p class="money red" id="total-collected"></p>
                         </div>
                         <div>
-                            <h2 class="bold">OBJECTIF FINAL</h2>
+                            <h4 class="bold">OBJECTIF FINAL</h2>
                             <p class="money red" id="total-goal"></p>
                         </div>
                     </section>
                 </section>
-                <section>
-                    <h2 class="uppercase center mb-5 red">Liste des Extrajobs</h2>
-                    <table class="table table-hover" id="data_extrajobs">
-                        <thead class="thead-dark">
-                            <tr>
-                                <th scope="col" class="bg-red c-white">Date</th>
-                                <th scope="col" class="bg-red c-white">Description</th>
-                                <th scope="col" class="bg-red c-white">Nbr. de personne</th>
-                                <th scope="col" class="bg-red c-white">Montant</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">18/05</th>
-                                <td>Vente de gateau</td>
-                                <td>5</td>
-                                <td>200€</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>Larry</td>
-                                <td>the Bird</td>
-                                <td>@twitter</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <section class="m-3">
+                    <h2 class="uppercase center mb-4 red">Liste des Extrajobs</h2>
+                    <div id="table-wrapper">
+                        <div id="table-scroll">
+                            <table class="table table-hover" id="data_extrajobs">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th scope="col" class="bg-red c-white">Date</th>
+                                        <th scope="col" class="bg-red c-white">Description</th>
+                                        <th scope="col" class="bg-red c-white">Nbr. de personne</th>
+                                        <th scope="col" class="bg-red c-white">Montant</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- Data will be insert with a json file -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </section>
             </div>
         </div>

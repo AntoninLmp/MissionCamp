@@ -14,3 +14,24 @@ descriptionBar.innerHTML = "Il y a " + pourcentage + "% de l'objectif collecté"
 
 totalCollected.innerHTML = moneyCollected + "€"; 
 totalGoal.innerHTML = moneyGoal + "€";
+
+document.addEventListener('DOMContentLoaded', function() {
+   fetch('static/funds/json/data.json')
+    .then(response => response.json())
+    .then(data => {
+        const table = document.querySelector("#data_extrajobs tbody"); 
+        data.extrajobs.forEach( extrajob => {
+            console.log(extrajob);
+            const row = `
+                <tr>
+                    <th>${extrajob.date}</th>
+                    <td>${extrajob.description}</td>
+                    <td>${extrajob.personnes} pers.</td>
+                    <td>${extrajob.montant}€</td>
+                </tr>
+            `;
+            table.innerHTML += row;
+        });
+    })
+    .catch(error => console.log('Erreur : ' + error)); 
+});

@@ -1,69 +1,107 @@
-body{
+body {
     margin: 0;
     padding: 0;
     font-family: "nunito", sans-serif !important;
-    
+
 }
 
 /* COLOR  */
-.red{
+.red {
     color: #cd3314;
 }
-.bg-red{
+
+.bg-red {
     background-color: #cd3314 !important;
 }
-.c-white{
+
+.c-white {
     color: white !important;
 }
 
 /* TEXT */
-.italic{
+.italic {
     font-style: italic;
 }
-.bold{
+
+.bold {
     font-weight: bold;
 }
-.center{
+
+.center {
     text-align: center;
 }
-.w-min{
+
+.w-min {
     width: min-content;
 }
-.uppercase{
+
+.uppercase {
     text-transform: uppercase;
 }
-.j-c-around{
+
+.j-c-around {
     justify-content: space-around;
 }
 
 /* HEADER */
-.headBorder{
-    background-color:  #f0a3a3;
+.headBorder {
+    background-color: #f0a3a3;
     margin: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
-.headBorder img{
+.headBorder img {
     width: 25%;
 }
-#foulard{
+#foulard {
     width: 7%;
     margin: 0 7em;
 }
 
 /* MAIN */
-.money{
+.money {
     font-size: 2em;
-    font-weight: bold;
+    font-style: oblique;
 }
-.hg-22{
+#caravane {
+    font-size: 1.5em !important;
+}
+.hg-22 {
     height: 22px;
+}
+#cont_info {
+    flex: 1;
+}
+#cont_funds{
+    flex: 2;
+}
+/* TABLE */
+#table-wrapper {
+    position: relative;
+}
+#table-scroll {
+    height: 150px;
+    overflow: auto;
+    margin-top: 20px;
+}
+#table-wrapper table {
+    width: 100%;
+}
+#table-wrapper table * {
+    color: black;
+}
+#table-wrapper table thead th .text {
+    position: absolute;
+    top: -20px;
+    z-index: 2;
+    height: 20px;
+    width: 35%;
+    border: 1px solid red;
 }
 
 /* FOOTER */
-footer{
+footer {
     background-color: #ffcdb2;
     display: flex;
     justify-content: space-between;
