@@ -72,16 +72,21 @@ body {
 }
 #cont_info {
     flex: 1;
+    margin: 0 15px;
 }
 #cont_funds{
     flex: 2;
 }
+#progressbarCont{
+    height: 25px;
+}
+
 /* TABLE */
 #table-wrapper {
     position: relative;
 }
 #table-scroll {
-    height: 150px;
+    height: 230px;
     overflow: auto;
     margin-top: 20px;
 }
