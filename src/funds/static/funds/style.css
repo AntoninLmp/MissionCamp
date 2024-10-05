@@ -2,48 +2,45 @@ body {
     margin: 0;
     padding: 0;
     font-family: "nunito", sans-serif !important;
-
 }
-
-/* COLOR  */
+/* ------------------ */
+/*      COLOR         */
+/* ------------------ */
 .red {
     color: #cd3314;
 }
-
 .bg-red {
     background-color: #cd3314 !important;
 }
-
 .c-white {
     color: white !important;
 }
 
-/* TEXT */
+/* ------------------ */
+/*     TEXT          */
+/* ------------------ */
 .italic {
     font-style: italic;
 }
-
 .bold {
     font-weight: bold;
 }
-
 .center {
     text-align: center;
 }
-
 .w-min {
     width: min-content;
 }
-
 .uppercase {
     text-transform: uppercase;
 }
-
 .j-c-around {
     justify-content: space-around;
 }
 
-/* HEADER */
+/* ------------------ */
+/*     HEADER        */
+/* ------------------ */
 .headBorder {
     background-color: #f0a3a3;
     margin: 0;
@@ -59,7 +56,19 @@ body {
     margin: 0 7em;
 }
 
-/* MAIN */
+/* ------------------ */
+/*     FOOTER        */
+/* ------------------ */
+footer {
+    background-color: #ffcdb2;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+/* ------------------ */
+/* MAIN CONTAINER     */
+/* ------------------ */
 .money {
     font-size: 2em;
     font-style: oblique;
@@ -81,7 +90,9 @@ body {
     height: 25px;
 }
 
-/* TABLE */
+/* ------------------ */
+/*    TABLE           */
+/* ------------------ */
 #table-wrapper {
     position: relative;
 }
@@ -105,10 +116,3 @@ body {
     border: 1px solid red;
 }
 
-/* FOOTER */
-footer {
-    background-color: #ffcdb2;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-}

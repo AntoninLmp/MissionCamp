@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="{% static 'funds/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'funds/media.css' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
@@ -20,18 +21,29 @@
     <main>
         <div class="d-flex">
             <div class="w-25 center" id="cont_infos">
-                <img src="https://st5.depositphotos.com/3369547/65830/v/450/depositphotos_658304136-stock-illustration-adventure-nature-camping-icon-isolated.jpg"
-                    alt="Image d'une tente" class="w-100">
-                <h1 class="red">PIONNIERS CARAVELLES</h1>
-                <section class="px-5">
-                    <h2 class="text-uppercase bold">Objectif</h2>
-                    <p>Notre objectif est de récolter 5000€ pour financer notre camp d'été 2025. Nous avons besoin
-                        de votre aide pour réaliser ce projet qui nous tient à coeur.</p>
-                </section>
+                <div class="d-flex flex-column">
+                    <img src="https://centresociallaissac.wordpress.com/wp-content/uploads/2021/02/logo_releve-le-defi-1.png"
+                        alt="DEFI" class="w-50 m-auto">
+                    <button type="button" class="btn btn-outline-danger mb-2 mx-4">A 500€ : RACLETTE PARTY</button>
+                    <button type="button" class="btn btn-outline-danger mb-2 mx-4" disabled>Défi 2 : Désactiver</button>
+                    <button type="button" class="btn btn-outline-danger mb-2 mx-4" disabled>Défi 3 : Désactiver</button>
+                    <button type="button" class="btn btn-outline-danger mb-2 mx-4" disabled>Défi 4 : Désactiver</button>
+                </div>
+                <div>
+                    <img src="https://st5.depositphotos.com/3369547/65830/v/450/depositphotos_658304136-stock-illustration-adventure-nature-camping-icon-isolated.jpg"
+                        alt="Image d'une tente" class="w-50">
+                    <h1 class="red">PIONNIERS CARAVELLES</h1>
+                    <section class="px-5">
+                        <h2 class="text-uppercase bold">Objectif</h2>
+                        <p>Notre objectif est de récolter 5000€ pour financer notre camp d'été 2025. Nous avons besoin
+                            de votre aide pour réaliser ce projet qui nous tient à coeur.</p>
+                    </section>
+                </div>
+
             </div>
             <div class="w-100 mx-5" id="cont_funds">
                 <section class="mt-5 m-3">
-                    <h2 class="uppercase center mb-3 red">Progression de notre objectif</h2>
+                    <h2 class="uppercase center mb-3 red bold">Progression de notre objectif</h2>
                     <p class="center" id="descriptionBar"></p>
                     <div class="progress m-5 hg-22" id="progressbarCont">
                         <div class="progress-bar bg-red" id="progressbarMoney" role="progressbar" aria-valuenow="25"
@@ -40,11 +52,11 @@
                     <section class="d-flex center j-c-around">
                         <div>
                             <h4 class="bold">TOTAL RECOLTE</h2>
-                            <p class="money red" id="total-collected"></p>
+                                <p class="money red" id="total-collected"></p>
                         </div>
                         <div>
                             <h4 class="bold">OBJECTIF FINAL</h2>
-                            <p class="money red" id="total-goal"></p>
+                                <p class="money red" id="total-goal"></p>
                         </div>
                     </section>
                 </section>
@@ -68,17 +80,6 @@
                         </div>
                     </div>
                 </section>
-            </div>
-        </div>
-        <div>
-            <div class="challenge-container">
-                <div class="progress-bar-2">
-                    <div class="tree-section" style="width: 5%;"><img src="{% static 'images/sapling.png' %}" alt="Sapling"></div>
-                    <div class="tree-section" style="width: 25%;"><img src="{% static 'images/small_tree.png' %}" alt="Small Tree"></div>
-                    <div class="tree-section" style="width: 50%;"><img src="{% static 'images/mid_tree.png' %}" alt="Mid Tree"></div>
-                    <div class="tree-section" style="width: 75%;"><img src="{% static 'images/tall_tree.png' %}" alt="Tall Tree"></div>
-                    <div class="tree-section" style="width: 100%;"><img src="{% static 'images/full_tree.png' %}" alt="Full Tree"></div>
-                </div>
             </div>
         </div>
     </main>

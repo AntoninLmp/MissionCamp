@@ -33,6 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+
 function updateProgressBar(moneyCollected) {
     let pourcentage = ((moneyCollected / moneyGoal) * 100).toFixed(2);
     progressBar.style.width = pourcentage + "%";

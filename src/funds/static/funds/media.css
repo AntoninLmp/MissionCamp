@@ -1,0 +1,6 @@
+@media (max-width: 767px) {
+    #cont_infos{
+        display: none;
+    }
+    
+}
