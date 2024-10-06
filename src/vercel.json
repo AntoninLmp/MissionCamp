@@ -20,11 +20,5 @@
             "src": "/(.*)",
             "dest": "scout_fundraiser/wsgi.py"
         }
-    ],
-    "rewrites": [
-        {
-            "source": "/(.*)",
-            "destination": "/"
-        }
     ]
 }
