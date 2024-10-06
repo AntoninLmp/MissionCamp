@@ -14,3 +14,6 @@ from django.core.wsgi import get_wsgi_application
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'scout_fundraiser.settings')
 
 application = get_wsgi_application()
+
+""" Because we have set vercel.app in setting file"""
+app = application
