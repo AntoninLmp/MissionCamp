@@ -125,6 +125,7 @@ main {
 
 #cont_funds {
     flex: 2;
+    margin: 0 1em;
 }
 
 #progressbarCont {
