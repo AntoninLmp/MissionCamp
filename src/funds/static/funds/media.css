@@ -1,6 +1,10 @@
 @media (max-width: 767px) {
+    main{
+        flex-direction: column;
+    }
     #cont_infos{
-        display: none;
+        width: 100%;
+        margin: auto;
     }
     
 }

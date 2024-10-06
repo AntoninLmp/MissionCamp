@@ -120,6 +120,7 @@ main {
     flex: 1;
     border-left: 1px solid gray;
     margin: 2em 15px;
+    width: 25%;
 }
 
 #cont_funds {
