@@ -1,3 +1,2 @@
-source .env/Script/activate
-pip install -r requirements.txt
+python3 -m pip install -r requirements.txt
 python manage.py collectstatic
