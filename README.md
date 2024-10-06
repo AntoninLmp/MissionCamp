@@ -21,9 +21,23 @@ Pour installer et exécuter ce projet, suivez ces étapes :
     python .\manage.py runserver
     ```
 
-## Utilisation
-Pour utiliser ce projet, suivez ces étapes :
+## Publication sur Vercel
+1. Ajout du fichier vercel.json 
 
+2. Avoir un fichier requirements.txt sinon 
+    ```
+    pip freeze > requirements.txt
+    ```
+
+3. Changement dans le fichier settings.py 
+    ```
+    ALLOWED_HOSTS = ['.vercel.app']
+    ```
+
+4. Ajouter dans le fichier wsgi.py 
+    ```
+    app = application
+    ```
 
 ## Licence
 Ce projet est sous licence [Votre Licence] - voir le fichier [LICENSE](LICENSE) pour plus de détails.
