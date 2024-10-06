@@ -1,5 +1,11 @@
 {
     "builds": [
+         {
+            "use": "@vercel/static-build",
+            "config": {
+                "distDir": "staticfiles"
+            }
+        },
         {
             "src": "scout_fundraiser/wsgi.py",
             "use": "@vercel/python",
