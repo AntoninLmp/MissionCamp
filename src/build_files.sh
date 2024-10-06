@@ -3,4 +3,4 @@
 export PATH=$PATH:/python312/bin
 python3 -m pip install -r requirements.txt
 python3 --version
-cd src && python3 manage.py collectstatic
+python3 src/manage.py collectstatic
