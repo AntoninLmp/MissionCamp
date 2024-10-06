@@ -2,13 +2,43 @@
     "extrajobs" : [
         {
             "description": "Musique",
-            "date": "28/09/2024",
+            "jour": "28/09/2024",
             "montant": 150,
             "personnes": 3
         },
         {
             "description": "Jardinage", 
-            "date": "28/09/2024",
+            "jour": "28/09/2024",
+            "montant": 150,
+            "personnes": 3
+        },
+        {
+            "description": "Jardinage", 
+            "jour": "28/09/2024",
+            "montant": 150,
+            "personnes": 3
+        },
+        {
+            "description": "Jardinage", 
+            "jour": "28/09/2024",
+            "montant": 150,
+            "personnes": 3
+        },
+        {
+            "description": "Jardinage", 
+            "jour": "28/09/2024",
+            "montant": 150,
+            "personnes": 3
+        },
+        {
+            "description": "Jardinage", 
+            "jour": "28/09/2024",
+            "montant": 150,
+            "personnes": 3
+        },
+        {
+            "description": "Jardinage", 
+            "jour": "28/09/2024",
             "montant": 150,
             "personnes": 3
         }

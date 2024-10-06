@@ -8,19 +8,18 @@ let descriptionBar = document.getElementById('descriptionBar');
 
 // Liste des extrajobs chargé avec un fichier json  
 document.addEventListener('DOMContentLoaded', function() {
-    fetch('static/funds/json/data.json')
+    fetch('static/funds/json/data.json', { cache: "no-store" })
     .then(response => response.json())
     .then(data => {
-        console.log(data);
         const table = document.querySelector("#data_extrajobs tbody"); 
+        console.log(data.extrajobs);
         data.extrajobs.forEach( extrajob => {
-            console.log(extrajob);
             const row = `
             <tr>
-            <th>${extrajob.date}</th>
-            <td>${extrajob.description}</td>
-            <td>${extrajob.personnes} pers.</td>
-            <td>${extrajob.montant}€</td>
+                <th>${extrajob.jour}</th>
+                <td>${extrajob.description}</td>
+                <td>${extrajob.personnes} pers.</td>
+                <td>${extrajob.montant}€</td>
             </tr>
             `;
             table.innerHTML += row;

@@ -3,15 +3,18 @@ body {
     padding: 0;
     font-family: "nunito", sans-serif !important;
 }
+
 /* ------------------ */
 /*      COLOR         */
 /* ------------------ */
 .red {
     color: #cd3314;
 }
+
 .bg-red {
     background-color: #cd3314 !important;
 }
+
 .c-white {
     color: white !important;
 }
@@ -22,20 +25,45 @@ body {
 .italic {
     font-style: italic;
 }
+
 .bold {
     font-weight: bold;
 }
+
 .center {
     text-align: center;
 }
+
+.text-left {
+    text-align: left;
+}
+
 .w-min {
     width: min-content;
 }
+
 .uppercase {
     text-transform: uppercase;
 }
+
 .j-c-around {
     justify-content: space-around;
+}
+
+.text-underlined {
+    text-decoration: underline;
+}
+
+.scrollable-div {
+    max-height: 80%;
+    overflow-y: auto;
+}
+
+.zone_info_border {
+    border: 1px solid #cd3314;
+    padding: 0.5em;
+    border-radius: 15px;
+    margin: 0 15%;
 }
 
 /* ------------------ */
@@ -48,12 +76,14 @@ body {
     align-items: center;
     justify-content: space-between;
 }
+
 .headBorder img {
     width: 25%;
 }
+
 #foulard {
     width: 7%;
-    margin: 0 7em;
+    margin-right: 4em;
 }
 
 /* ------------------ */
@@ -69,25 +99,44 @@ footer {
 /* ------------------ */
 /* MAIN CONTAINER     */
 /* ------------------ */
+main {
+    max-height: 83vh;
+}
+
 .money {
     font-size: 2em;
     font-style: oblique;
 }
+
 #caravane {
     font-size: 1.5em !important;
 }
+
 .hg-22 {
     height: 22px;
 }
-#cont_info {
+
+#cont_infos {
     flex: 1;
-    margin: 0 15px;
+    border-left: 1px solid gray;
+    margin: 2em 15px;
 }
-#cont_funds{
+
+#cont_funds {
     flex: 2;
 }
-#progressbarCont{
+
+#progressbarCont {
     height: 25px;
+    margin: 4em;
+}
+
+.container_red {
+    text-align: center;
+    padding: 5px;
+    margin: 10px 20%;
+    border-radius: 15pc;
+    color: white;
 }
 
 /* ------------------ */
@@ -96,17 +145,21 @@ footer {
 #table-wrapper {
     position: relative;
 }
+
 #table-scroll {
     height: 230px;
     overflow: auto;
     margin-top: 20px;
 }
+
 #table-wrapper table {
     width: 100%;
 }
+
 #table-wrapper table * {
     color: black;
 }
+
 #table-wrapper table thead th .text {
     position: absolute;
     top: -20px;
@@ -115,4 +168,3 @@ footer {
     width: 35%;
     border: 1px solid red;
 }
-
