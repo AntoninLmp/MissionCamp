@@ -1,0 +1,23 @@
+@media (max-width: 767px) {
+    main{
+        flex-direction: column;
+    }
+    #cont_infos{
+        width: 100%;
+        margin: auto;
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+    #cont_funds{
+        margin: 0 15px !important;
+    }
+    .money {
+        font-size: 1.5em;
+    }
+  }
+  

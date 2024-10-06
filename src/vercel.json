@@ -1,7 +1,7 @@
 {
     "builds": [
         {
-            "src": "scout_fundraiser/wsgi.py",
+            "src": "src/scout_fundraiser/wsgi.py",
             "use": "@vercel/python",
             "config": {
                 "maxLambdaSize": "15mb"
@@ -11,7 +11,7 @@
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "scout_fundraiser/wsgi.py"
+            "dest": "src/scout_fundraiser/wsgi.py"
         }
     ],
     "rewrites": [
