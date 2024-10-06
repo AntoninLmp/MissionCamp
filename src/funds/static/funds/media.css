@@ -13,9 +13,6 @@
     body {
       background-color: lightblue;
     }
-    #cont_funds{
-        margin: 0 15px !important;
-    }
     .money {
         font-size: 1.5em;
     }
