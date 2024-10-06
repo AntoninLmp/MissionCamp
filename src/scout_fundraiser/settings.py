@@ -68,7 +68,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'scout_fundraiser.wsgi.application'
+WSGI_APPLICATION = 'scout_fundraiser.wsgi.app'
 
 
 # Database
