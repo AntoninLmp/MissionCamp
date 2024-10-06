@@ -1,16 +1,23 @@
 {
     "builds": [
-      {
-        "src": "scout_fundraiser/wsgi.py",
-        "use": "@vercel/python",
-        "config": { "maxLambdaSize": "15mb", "runtime" : "python3.9" }
-      }
+        {
+            "src": "scout_fundraiser/wsgi.py",
+            "use": "@vercel/python",
+            "config": {
+                "maxLambdaSize": "15mb"
+            }
+        }
     ],
     "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "scout_fundraiser/wsgi.py"
-      }
+        {
+            "src": "/(.*)",
+            "dest": "scout_fundraiser/wsgi.py"
+        }
+    ],
+    "rewrites": [
+        {
+            "source": "/(.*)",
+            "destination": "/"
+        }
     ]
-  }
-  
+}
