@@ -13,34 +13,16 @@
             "personnes": 3
         },
         {
-            "description": "Jardinage", 
+            "description": "Mariage", 
             "jour": "28/09/2024",
-            "montant": 150,
+            "montant": 80,
             "personnes": 3
         },
         {
-            "description": "Jardinage", 
-            "jour": "28/09/2024",
+            "description": "BabySitting", 
+            "jour": "10/11/2024",
             "montant": 150,
-            "personnes": 3
-        },
-        {
-            "description": "Jardinage", 
-            "jour": "28/09/2024",
-            "montant": 150,
-            "personnes": 3
-        },
-        {
-            "description": "Jardinage", 
-            "jour": "28/09/2024",
-            "montant": 150,
-            "personnes": 3
-        },
-        {
-            "description": "Jardinage", 
-            "jour": "28/09/2024",
-            "montant": 150,
-            "personnes": 3
+            "personnes": 2
         }
     ]
 }
