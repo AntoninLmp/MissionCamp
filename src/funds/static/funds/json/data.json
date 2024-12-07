@@ -23,6 +23,26 @@
             "jour": "10/11/2024",
             "montant": 150,
             "personnes": 2
+        },{
+            "description": "BabySitting", 
+            "jour": "01/12/2024",
+            "montant": 25,
+            "personnes": 1
+        },{
+            "description": "Vente gâteaux", 
+            "jour": "01/12/2024",
+            "montant": 242.44,
+            "personnes": 2 
+        },{
+            "description": "papier cadeau", 
+            "jour": "29/11/2024",
+            "montant": 138.9,
+            "personnes": 4
+        },{
+            "description": "papier cadeau", 
+            "jour": "29/11/2024",
+            "montant": 154.87,
+            "personnes": 4
         }
     ]
 }
