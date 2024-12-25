@@ -40,8 +40,33 @@
             "personnes": 4
         },{
             "description": "papier cadeau", 
-            "jour": "29/11/2024",
+            "jour": "07/11/2024",
             "montant": 154.87,
+            "personnes": 4
+        },{
+            "description": "papier cadeau", 
+            "jour": "14/12/2024",
+            "montant": 144,
+            "personnes": 4
+        },{
+            "description": "papier cadeau", 
+            "jour": "21/12/2024",
+            "montant": 341.19,
+            "personnes": 4
+        },{
+            "description": "papier cadeau", 
+            "jour": "22/12/2024",
+            "montant": 201.25,
+            "personnes": 4
+        },{
+            "description": "papier cadeau", 
+            "jour": "23/12/2024 (matin)",
+            "montant": 126.63,
+            "personnes": 4
+        },{
+            "description": "papier cadeau", 
+            "jour": "24/12/2024",
+            "montant": 318.50,
             "personnes": 4
         }
     ]
