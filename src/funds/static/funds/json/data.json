@@ -68,6 +68,21 @@
             "jour": "24/12/2024",
             "montant": 318.50,
             "personnes": 4
+        },{
+            "description": "Mariage", 
+            "jour": "11/05/2025",
+            "montant": 670,
+            "personnes": 4
+        },{
+            "description": "Messe", 
+            "jour": "18/05/2025",
+            "montant": 173.08,
+            "personnes": 1
+        },{
+            "description": "Baby sitting", 
+            "jour": "18/05/2025",
+            "montant": 50,
+            "personnes": 1
         }
     ]
 }
